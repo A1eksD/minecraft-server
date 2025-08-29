@@ -4,8 +4,9 @@ WORKDIR /app
 
 COPY JavaServer/server.jar ./server.jar
 
-RUN chmod +x /app/conatiner-entrypoint.sh
+COPY container-entrypoint.sh ./entrypoint.sh
+RUN chmod +x ./entrypoint.sh
 
 EXPOSE 25565
 
-ENTRYPOINT [ "/bin/sh", "-c", "/app/conatiner-entrypoint.sh" ]
+ENTRYPOINT [ "./entrypoint.sh" ]
