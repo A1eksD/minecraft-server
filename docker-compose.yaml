@@ -7,7 +7,7 @@ services:
     ports:
       - "8888:25565"
     volumes:
-      - local_data:/app/
+      - local_data:/data
     environment:
       EULA: "TRUE"                  # setzt eula=true beim ersten Start (wird für interne server config gebraucht)
 
