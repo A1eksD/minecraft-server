@@ -5,7 +5,7 @@ WORKDIR /app
 COPY JavaServer/server.jar ./server.jar
 
 COPY container-entrypoint.sh ./entrypoint.sh
-RUN chmod +x ./entrypoint.sh
+RUN chmod +x ./entrypoint.sh  
 
 EXPOSE 25565
 
