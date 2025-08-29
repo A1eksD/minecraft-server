@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  mc-server:
+    build: .
+    image: my/minecraft-server      # image name/tag
+    restart: unless-stopped         # autorestart if shotdown
+    ports:
+      - "8888:25565"
+    volumes:
+      - local_data:/app/
+    environment:
+      EULA: "TRUE"                  # setzt eula=true beim ersten Start (wird für interne server config gebraucht)
+
+
+volumes:
+  local_data:  
