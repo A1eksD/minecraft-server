@@ -2,7 +2,7 @@ version: "3.9"
 services:
   mc-server:
     build: .
-    image: minecraft-server         # image name/tag
+    image: minecraft-server:v1.0    # image name/tag
     restart: unless-stopped         # autostart if shutdown
     ports:
       - "8888:25565"
