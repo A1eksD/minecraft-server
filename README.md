@@ -5,7 +5,6 @@
 * [Description](#description)  
 * [Requirements](#requirements)
 * [Quickstart](#quickstart)
-* [Useful](#useful)
 
 ## Description
 
@@ -14,7 +13,7 @@ This repository provides a fully-containerised Minecraft Java server environment
 ## Requirements
 
 - Docker Compose
-- Server
+- server.jar
 
 ## Quickstart
 
@@ -28,13 +27,3 @@ This repository provides a fully-containerised Minecraft Java server environment
     ```bash
         docker-compose up --build
     ```
-
-## Useful
-
-| Container     | Prompt                                | Compose                                   | 
-|---------------|---------------------------------------|-------------------------------------------|
-| stop          | docker stop <container-name>          | docker compose stop <container-name>      |
-| start         | docker start <container-name>         | docker compose start <container-name>     |
-| restart       | docker restart <container-name>       | docker compose restart <container-name>   |
-| remove        | docker rm -f <container-name>         | docker compose down <container-name>      |
-| logs          | docker logs -f <container-name>       | docker compose logs -f <container-name>   |
