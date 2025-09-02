@@ -5,6 +5,7 @@
 * [Description](#description)  
 * [Requirements](#requirements)
 * [Quickstart](#quickstart)
+* [Usage](#usage)
 
 ## Description
 
@@ -27,3 +28,8 @@ This repository provides a fully-containerised Minecraft Java server environment
     ```bash
         docker-compose up --build
     ```
+
+## Usage
+
+Open `server-properties.sh` to configure the server.
+Here you can set the listening port, choose the log level, define the maximum number of simultaneous connections, and adjust any other available options.
